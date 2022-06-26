@@ -36,7 +36,7 @@ ul {
     background-color: #f8deae;
     display: flex;
     justify-content: center;
-    height: 8rem;
+    height: 6.5rem;
     position: sticky;
     top: 0;
     width: 100%;
@@ -48,11 +48,11 @@ ul {
     max-width: 1200px;
     margin: 0 auto;
     align-items: center;
-    width: 90vw;
+    width: 85vw;
 }
 .menu__nav {
     display: flex;
-    width: 55%;
+    /* width: 55%; */
     justify-content: space-around;
     text-align: center;
 }
@@ -62,12 +62,14 @@ ul {
 }
 .menu__nav li a{
     color: #7e433e;
-    border-bottom: solid 1px;
+    border-bottom: 2px;
+    font-weight: bold;
 }
 
 .menu__title{
     font-family: 'Kalam';
     color: #7e433e;
+    /* color: #23334d; */
     font-size: 3rem;
 }
 
@@ -156,6 +158,84 @@ ul {
     border-radius: 10px;
 }
 
+/* cartas nosotras */
+.cardFoto {
+    padding: 0.5rem;
+    border-radius: 50px;
+}
+
+/* Card CURSOS */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.courses {
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+}
+.courses__title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.courses__grid{
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    /* margenes alrededorde cada celda */
+    gap: 50px;
+}
+.card{
+    color: #7e433e;
+    background-color: #f8deae;
+    padding: 0.5rem;
+    /* width: 100%; */
+    /* height: 200px; */
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0,0.5);
+}
+/* .card__header {
+    position: relative;
+} */
+
+.card__header img{
+    /* esta imagen toma el 100% del contenedor */
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* FORMULARIO FIJO  */
+.contenidoFormulario {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+
+}
+.contenidoFormulario {
+    color: #7e433e;
+    background-color: #f8deae;
+    padding: 0.5rem;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0,0.5);
+}
+.formulario {
+    text-align: left;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: bold;
+}
+
+
+
 .posicion{
     position: relative;
     width: 100px;
@@ -170,6 +250,19 @@ ul {
     position: fixed;
 }
 
+/* MAPA DEL ESTUDIO */
+.map {
+    padding: 5px;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    
+}
+.map__img img{
+    width: 100%;
+    justify-content: center;
+
+}
 .elFooter{
     display: flex;
     flex-wrap: wrap ;

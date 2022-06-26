@@ -14,10 +14,10 @@
             <nav class="header__menu">
                 <a href="../index.html" class="menu__title">HCC!</a>
             <ul class="menu__nav">
-                <li><a href="./nosotras.html">NOSOTRAS</a></li>
-                <li><a href="./cursos.html">CURSOS</a></li>
-                <li><a href="./cowork.html">ESPACIO DE TRABAJO</a></li>
-                <li><a href="./contacto.html">ASESORAMIENTO - CONTACTO</a></li>
+                <strong><li><a href="./nosotras.html">NOSOTRAS</a></li></strong>
+                <strong><li><a href="./cursos.html">CURSOS</a></li></strong>
+                <strong><li><a href="./cowork.html">ESPACIO DE TRABAJO</a></li></strong>
+                <strong><li><a href="./contacto.html">ASESORAMIENTO - CONTACTO</a></li></strong>
 
             </ul>
           </nav>
@@ -27,6 +27,50 @@
             <h1>HOLA CORDOBA COWORKING!</h1>
             <h2>Servicio de Profesionales</h2>
         </section>
+
+        <section class="courses container">
+            <h3 class="courses__title">NUESTROS CURSOS</h3>
+            <div class="courses__grid">
+                <article class="card">
+                    <div class="card__header">
+                        <img src="../assets/img/divorcio.jpg" alt="Marcas" />
+                    </div>
+                    <h4 class="card__title"> PATENTES Y REGISTRO DE MARCAS </h4>
+                    <p class="card__description">Que se puede o no registrar como Marca; Busqueda de disponibilidad. Clasificación Marcaria. Etapas del Tramite, presentación y seguimiento. Vicisitudes.</p>
+                    <a class="card__link" href="">saber mas</a>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="../assets/img/pexels-karolina-grabowska-7876088.jpg" alt="Sociedades" />
+                    </div>
+                    <h4 class="card__title"> CONSTITUCION DE SOCIEDADES </h4>
+                    <p class="card__description">Constitución de Sociedades Anónimas, Simplificadas y de Responsabilidad Limitada. Registro de Actas y Libros. Etapas del Tramite, presentación y seguimiento. Vicisitudes.</p>
+                    <a class="card__link" href="">saber mas</a>
+                </article>
+            
+            
+                <article class="card">
+                    <div class="card__header">
+                        <img src="../assets/img/Acuerdo.jpg" alt="Consumidor">
+                    </div>
+                    <h4 class="card__title"> DEFENSA DEL CONSUMIDOR </h4>
+                    <p>Principios y Conceptos Fundamentales del C.C.C.N. Ley 24.240 y modif. Etapas del Tramite, presentación y seguimiento. Vicisitudes.</p>
+                    <a class="card__link" href="">saber mas</a>
+                </article>
+            
+            
+                <article class="card">
+                    <div class="card__header">
+                        <img src="../assets/img/acuerdoReunion.jpg" alt="Cuota">
+                    </div>
+                    <h4 class="card__title"> REGIMEN COMUNICACIONAL Y CUOTA ALIMENTARIA </h4>
+                    <p class="card__description">Principios Procesales, Modalidades de la Responsabilidad Parental. Medidas Precautorias. Cumplimiento y Ejecucion de Cuota. Procedimiento y Vicisitudes.</p>
+                    <a class="card__link" href="">saber mas</a>
+                </article>
+            </div>
+       
+        </section>
+
         <h3>Modalidades de Cursado</h3>
         <h5>Estos cursos sirven para la formación en la práctica profesional cómo abogados, 
             contadores, y/o estudiantes de la carrera de Abogacía. 
@@ -72,28 +116,19 @@
             </ol>
         </section>
 
-        <section>
-            <h3>NUESTROS CURSOS</h3>
-            <ul>
-                <li>PATENTES Y REGISTRO DE MARCAS</li>
-                <li>CONSTITUCION DE SOCIEDADES - Sociedad Anonima, S.A.S.; S.R.L.</li>
-                <li>DEFENSA DEL CONSUMIDOR</li>
-                <li>REGIMEN COMUNICACIONAL Y CUOTA ALIMENTARIA - EJECUCIONES - INCIDENTES</li>
-                <li>REGIMEN PREVISIONAL - Jubilaciones</li>
-            </ul>
-        </section>
+       
 
-        <section>
+        <section class="contenidoFormulario">
             <h3>INSCRIPCIONES - info</h3>
-            <form action="">
-                <label for="nombre">Ingrese su nombre:</label>
+            <form class="formulario" action="">
+                <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre..."/>
                 <br />
-                <label for="correo">Ingrese su correo electronico:</label>
+                <label for="correo">Correo electronico:</label>
                 <input type="email" id="correo" name="correo" placeholder="Email"/>
                 <br/>
                 <label for="consulta">Ingrese un mensaje:</label>
-                <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Consulta..."></textarea>
+                <textarea name="consulta" id="consulta" cols="35" rows="8.5" placeholder="Consulta..."></textarea>
                 <br/>
                 <label for="curso">Curso:</label>
                 <select name="curso" id="curso">
