@@ -16,7 +16,7 @@
 }
 body {
     font-family: 'Biryani';
-    background-color: #A66D58;
+    background-color: #b87a63;
     color: #f8deae;
 }
 
@@ -26,6 +26,9 @@ a {
 p {
     line-height: 1.5;
     text-align: justify;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    /* font-size: 2rem; */
 }
 ul {
     /* saca viñetita a la lista */
@@ -92,18 +95,22 @@ ul {
     margin-left:3.5rem;
     justify-content: center;
 }
-
+/* INDEX */
+.text{
+    font-size: 20px;
+    margin: 20px 15px;
+}
 .titulo2{
     font-family: 'Kalam';
     src: url('../font/Kalam-Bold.ttf');
     font-size: 2.5rem;
     height: 3rem;
     margin-top: 30px;
-    padding-left: 1rem;    
+    padding-left: 3rem;    
 }
 .listaCursos{
     display: inline-block;
-    margin-top: 0;
+    margin-top: 5px;
     padding-top: 0;
     margin-left: 2rem;
     height: 0%;
@@ -126,13 +133,14 @@ ul {
     align-items: center;
     justify-content: center;
     margin: 1rem;
-
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0,0.5);
 }
 .cardEspecialidades p{
     align-content: space-evelyn;
     text-align: center;
     text-justify: distribute-all-lines;
     width: 80%;
+    margin-bottom: 5px;
 }
 .cardImg{
     width: 30vw;
@@ -156,6 +164,7 @@ ul {
     color: white;
     padding: 0.5rem;
     border-radius: 10px;
+    margin: 3px;
 }
 
 /* cartas nosotras */
@@ -205,7 +214,15 @@ ul {
     border-radius: 10px;
     margin-bottom: 20px;
 }
-
+.cursado{
+    padding: 1rem;
+    font-size: 18px;
+    margin: 20px 10px;
+}
+.cursado ul li{
+    margin-left: 30px;
+    list-style-type: square;
+}
 /* FORMULARIO FIJO  */
 .contenidoFormulario {
     display: flex;
@@ -233,14 +250,11 @@ ul {
     width: 100%;
     font-weight: bold;
 }
-
-
-
+/* whatsApp */
 .posicion{
     position: relative;
     width: 100px;
-    height: 100px;
-    
+    height: 100px;  
 }
 
 .wsp{
