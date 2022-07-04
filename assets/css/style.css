@@ -22,6 +22,7 @@ body {
 
 a {
     text-decoration: none;
+    font-size: 18px;
 }
 p {
     line-height: 1.5;
@@ -33,13 +34,14 @@ p {
 ul {
     /* saca viñetita a la lista */
     list-style-type: none;
+    margin-left: 15px;
 }
 
 .header {
     background-color: #f8deae;
     display: flex;
     justify-content: center;
-    height: 6.5rem;
+    height: 6rem;
     position: sticky;
     top: 0;
     width: 100%;
@@ -97,7 +99,7 @@ ul {
 }
 /* INDEX */
 .text{
-    font-size: 20px;
+    font-size: 16px;
     margin: 20px 15px;
 }
 .titulo2{
@@ -117,10 +119,9 @@ ul {
     justify-content: space-around;
 }
 .contenedor{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: left;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
 }
 .cardEspecialidades{
     background-color: #f8deae;
@@ -136,11 +137,10 @@ ul {
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0,0.5);
 }
 .cardEspecialidades p{
-    align-content: space-evelyn;
     text-align: center;
-    text-justify: distribute-all-lines;
     width: 80%;
     margin-bottom: 5px;
+    font-size: 16px;
 }
 .cardImg{
     width: 30vw;
@@ -164,9 +164,24 @@ ul {
     color: white;
     padding: 0.5rem;
     border-radius: 10px;
-    margin: 3px;
+    margin: 5px;
 }
 
+@media (max-width: 992px) {
+    .contenedor{
+        display: grid;
+        gap:50px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 576px){
+    .contenedor{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+    }
+}
+/* ***** */
 /* cartas nosotras */
 .cardFoto {
     padding: 0.5rem;
@@ -204,15 +219,36 @@ ul {
     border-radius: 10px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0,0.5);
 }
+
 /* .card__header {
     position: relative;
 } */
+.card__title{
+    margin: 5px;
+    text-align: center;
+    font-style: bold;
+}
 
 .card__header img{
     /* esta imagen toma el 100% del contenedor */
     width: 100%;
     border-radius: 10px;
     margin-bottom: 20px;
+    height: 450px;
+}
+.card__description{
+    padding: 5px;
+    margin: 10px;
+}
+.card__link{
+    background-color: #7e433e;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 5px;
+    display: inline-block;
+    text-align: justify;
+
 }
 .cursado{
     padding: 1rem;
@@ -223,6 +259,7 @@ ul {
     margin-left: 30px;
     list-style-type: square;
 }
+
 /* FORMULARIO FIJO  */
 .contenidoFormulario {
     display: flex;
@@ -250,6 +287,62 @@ ul {
     width: 100%;
     font-weight: bold;
 }
+
+/* COWORKING */
+.hijo { /* un solo hijo */
+    grid-area: je;
+}
+.hijo img{
+    height: 100% ;
+}
+.aver{
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: juju;
+}
+.aver img{
+    margin: 10px;
+    height: 85%;
+}
+.aver article{
+    display: inline-block; 
+}
+.aver article ul li {
+    margin-left: 10px;
+    list-style-type: square;
+
+}
+#padre div { /* cada hijo */
+    border: solid 1px;
+    font-size: 21px;
+    padding: 5px;
+
+}
+#padre div img{
+    border-radius: 10px;
+    /* justify-items: center;
+    align-items: center; */
+}
+  
+#padre {  
+    display: grid;
+    margin-left: 25px;
+    width: 1200px;
+    /* height: 1350px; */
+    border: dotted 1px red;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 10px;
+    grid-template-areas:
+      "je . ."
+      "je . ."
+      "juju juju juju";
+     
+}
+
+  
+
 /* whatsApp */
 .posicion{
     position: relative;
@@ -274,12 +367,14 @@ ul {
 }
 .map__img img{
     width: 100%;
-    justify-content: center;
+    border: solid 5px #f8deae;
+    border-radius: 10px;
+    margin-left: 15px;
 
 }
 .elFooter{
-    display: flex;
-    flex-wrap: wrap ;
+    /* display: flex;
+    flex-wrap: wrap ; */
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
@@ -290,7 +385,7 @@ ul {
 .elFooter ul li{
     display: inline-block;
     justify-content: center;
-    width: 100px;
+    /* width: 100px; */
     height: 100px;
 }
 
