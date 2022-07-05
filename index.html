@@ -13,8 +13,8 @@
 
 </head>
 <body>
-    <header class="header"> 
-        <nav class="header__menu">
+    <header class="header">
+        <nav class="header__menu container">
             <a href="./index.html" class="menu__title">HCC!</a>
             <ul class="menu__nav">
                 <strong><li><a href="./pages/nosotras.html">NOSOTRAS</a></li></strong>
@@ -35,48 +35,50 @@
             Contamos con el mejor equipo profesores y tutores, de las materias más dificiles de la carrera de Abogacía a los fines de prepararte exitosamente en tus exámenes.</p>
         </section>
 
-        <section>
+        <section class="courses container">
             <h3 class="titulo2">NUESTRAS ESPECIALIDADES</h3>
             
-            <div class="contenedor">
-                <article class="cardEspecialidades">
-                    <div class="cardImg"> 
+            <div class="courses__grid">
+                <article class="card">
+                    <div class="card__header"> 
                         <video class="cardVideo" src="./assets/img/pexels-pavel-danilyuk-8716593.mp4" controls autoplay muted ></video>
                     </div>
                     <div>
-                        <ul class="listaCursos">
-                            <strong>CURSOS</strong>
-                            <li>DERECHO LABORAL - ART</li>
-                            <li>PATENTES Y REGISTRO DE MARCAS</li>
-                            <li>CONSTITUCION DE SOCIEDADES - Sociedad Anonima, S.A.S.; S.R.L.</li>
-                            <li>DEFENSA DEL CONSUMIDOR</li>
-                            <li>REGIMEN COMUNICACIONAL Y CUOTA ALIMENTARIA - EJECUCIONES - INCIDENTES</li>
-                            <li>REGIMEN PREVISIONAL - Jubilaciones</li>
-                        
-                        </ul>
+                        <p class="card__description">
+                            <ul class="listaCursos">
+                                <h4 class="card__title">CURSOS</h4>
+                                <li>DERECHO LABORAL - ART</li>
+                                <li>PATENTES Y REGISTRO DE MARCAS</li>
+                                <li>CONSTITUCION DE SOCIEDADES - Sociedad Anonima, S.A.S.; S.R.L.</li>
+                                <li>DEFENSA DEL CONSUMIDOR</li>
+                                <li>REGIMEN COMUNICACIONAL Y CUOTA ALIMENTARIA - EJECUCIONES - INCIDENTES</li>
+                                <li>REGIMEN PREVISIONAL - Jubilaciones</li>
+                            
+                            </ul>
+                        </p>     
                     </div>
-                    <a href="./pages/cursos.html" class="button">Ver mas...</a>
+                    <a class="card__link" href="./pages/cursos.html" class="button">Ver mas...</a>
                         
                 </article>
 
 
-                <article class="cardEspecialidades">
+                <article class="card">
                     
-                    <p>Somos un equipo técnico de tres abogadas y una contadora, especializadas en Materia Laboral, Daños y Perjuicios, Derecho de Familia y Previsional. Acercate a nuestro Estudio Juridico!</p>
+                    <p class="card__description">Somos un equipo técnico de tres abogadas y una contadora, especializadas en Materia Laboral, Daños y Perjuicios, Derecho de Familia y Previsional. Acercate a nuestro Estudio Juridico!</p>
                               
-                    <div class="cardImg">
+                    <div class="card__header">
                         <img src="./assets/img/pexels-ekaterina-bolovtsova-6077520.jpg" alt="justicia"  />
                     </div>
-                    <a href="./pages/nosotras.html" class="button">Dejanos tu Consulta</a>
+                    <a class="card__link" href="./pages/nosotras.html" class="button">Dejanos tu Consulta</a>
                     
                 </article>
                 
-                <article class="cardEspecialidades">
-                    <p>CONTAMOS CON UN AMPLIO ESPACIO DE TRABAJO Y ESTUDIO PARA QUE ALQUILES!</p>
-                    <div class="cardImg">
+                <article class="card">
+                    <p class="card__description">CONTAMOS CON UN AMPLIO ESPACIO DE TRABAJO Y ESTUDIO PARA QUE ALQUILES!</p>
+                    <div class="card__header">
                         <img src="./assets/img/espacio5.png" alt="conferencias" />
                     </div>    
-                    <a href="./pages/cowork.html" class="button">Ver mas...</a>
+                    <a class="card__link" href="./pages/cowork.html" class="button">Ver mas...</a>
                 </article>
  
             </div>

@@ -27,8 +27,8 @@ a {
 p {
     line-height: 1.5;
     text-align: justify;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    /* margin-left: 1rem;
+    margin-top: 1rem; */
     /* font-size: 2rem; */
 }
 ul {
@@ -36,9 +36,15 @@ ul {
     list-style-type: none;
     margin-left: 15px;
 }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+  
+}
 
 .header {
     background-color: #f8deae;
+    padding: 30px 20px;
     display: flex;
     justify-content: center;
     height: 6rem;
@@ -50,7 +56,7 @@ ul {
 .header__menu{
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     align-items: center;
     width: 85vw;
@@ -97,7 +103,9 @@ ul {
     margin-left:3.5rem;
     justify-content: center;
 }
+
 /* INDEX */
+
 .text{
     font-size: 16px;
     margin: 20px 15px;
@@ -118,117 +126,29 @@ ul {
     height: 0%;
     justify-content: space-around;
 }
-.contenedor{
-    display: grid;
-    gap: 50px;
-    grid-template-columns: repeat(3, 1fr);
-}
-.cardEspecialidades{
+
+/* ************** */
+
+/* TARJETAS: INDEX - NOSOTRAS - CURSOS */
+.card{
     background-color: #f8deae;
-    border-radius: 50px;
+    border-radius: 10px;
     color: #7e433e;
-    height: 30rem;
-    width: 30vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* height: 30rem;
+    width: 30vw; */
+    padding: 0.5rem;
     margin: 1rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0,0.5);
 }
-.cardEspecialidades p{
-    text-align: center;
-    width: 80%;
-    margin-bottom: 5px;
-    font-size: 16px;
-}
-.cardImg{
-    width: 30vw;
-    height: 25vw;
-    overflow: hidden;
-    color: #7e433e;
-}
-.cardVideo{
-    width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-}
-.cardImg img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
 
-.button{
-    background-color: #7e433e;
-    color: white;
-    padding: 0.5rem;
-    border-radius: 10px;
-    margin: 5px;
-}
-
-@media (max-width: 992px) {
-    .contenedor{
-        display: grid;
-        gap:50px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 576px){
-    .contenedor{
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr;
-    }
-}
-/* ***** */
-/* cartas nosotras */
-.cardFoto {
-    padding: 0.5rem;
-    border-radius: 50px;
-}
-
-/* Card CURSOS */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-
-}
-.courses {
-    margin-top: 35px;
-    margin-bottom: 35px;
-
-}
-.courses__title {
-    font-size: 25px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-.courses__grid{
-    display: grid;
-    grid-template-columns: repeat(2, 3fr);
-    /* margenes alrededorde cada celda */
-    gap: 50px;
-}
-.card{
-    color: #7e433e;
-    background-color: #f8deae;
-    padding: 0.5rem;
-    /* width: 100%; */
-    /* height: 200px; */
-    border-radius: 10px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0,0.5);
-}
-
-/* .card__header {
-    position: relative;
-} */
 .card__title{
     margin: 5px;
     text-align: center;
     font-style: bold;
 }
-
+/* .card__header{
+    position: relative;
+} */
 .card__header img{
     /* esta imagen toma el 100% del contenedor */
     width: 100%;
@@ -248,7 +168,69 @@ ul {
     margin: 5px;
     display: inline-block;
     text-align: justify;
+}
 
+.card p{
+    text-align: justify;
+    /* width: 80%; */
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.cardVideo{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.button{
+    background-color: #7e433e;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+/* @media (max-width: 992px) {
+    .contenedor{
+        display: grid;
+        gap:50px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 576px){
+    .contenedor{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+    }
+} */
+/* ***** */
+
+.courses {
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+}
+.courses__title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.courses__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    /* margenes alrededorde cada celda */
+    gap: 10px;
+    justify-content: space-around;
+}
+.courses__grid1{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    /* margenes alrededorde cada celda */
+    gap: 10px;
+    justify-content: space-around;
 }
 .cursado{
     padding: 1rem;
