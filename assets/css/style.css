@@ -14,6 +14,9 @@
     text-decoration: none;
     list-style: none;
 }
+html{
+    font-size: 62.5%;
+}
 body {
     font-family: 'Biryani';
     background-color: #b87a63;
@@ -88,17 +91,17 @@ ul {
     background-image: url('../img/fondoJusticia.jpg');
     height: 45vh;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 .titulo h1{
     font-family: 'Kalam';
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: 15px;
     margin-left: 1.5rem;
 }
 .titulo h2{
     font-family: 'Kalam';
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: 5px;
     margin-left:3.5rem;
     justify-content: center;
@@ -125,6 +128,7 @@ ul {
     margin-left: 2rem;
     height: 0%;
     justify-content: space-around;
+    font-size: 1.5rem;
 }
 
 /* ************** */
@@ -135,7 +139,7 @@ ul {
     border-radius: 10px;
     color: #7e433e;
     /* height: 30rem; */
-    width: 90%;
+    /* width: 90%; */
     padding: 0.5rem;
     margin: 1rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0,0.5);
@@ -144,6 +148,7 @@ ul {
     margin: 5px;
     text-align: center;
     font-style: bold;
+    font-size: 1.5rem;
 }
 /* .card__header{
     position: relative;
@@ -166,9 +171,9 @@ ul {
     border-radius: 10px;
     /* margin: 5px ; */
     width: 50%;
-    margin-top: 0;
     display: inline-block;
     text-align: center;
+
 }
 
 .card p{
@@ -243,39 +248,7 @@ ul {
     .map__img {
         width: 90%;
     }
-}
    
-@media (max-width: 665px) {
-    .courses__grid {
-        grid-template-columns: 1fr;
-    }
-    .courses__grid1{
-        grid-template-columns: 1fr;
-    }
-   
-    .menu__nav {
-        display: none;
-    }
-
-    .formulario{
-        display: none;
-    }
-    .contenidoFormulario{
-        display: none;
-    }
-    .map__img {
-        width: 1fr;
-    }
-    .titulo{
-        width: 90%;
-
-    }
-    .titulo h1 {
-        font-size: 3rem;
-    }
-    .titulo h2{
-        display: none;
-    }
 }
 
 
@@ -285,7 +258,7 @@ ul {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    position: relative;
+    /* position: relative; */
     right: 0;
     bottom: 0;
     position: fixed;
@@ -308,15 +281,15 @@ ul {
 
 /* COWORKING */
 .hijo { /* un solo hijo */
-    grid-area: je;
+    grid-area: hijo;
 }
 .hijo img{
     height: 100% ;
 }
 .aver{
-    justify-self: stretch;
-    align-self: stretch;
-    grid-area: juju;
+    /* justify-self: stretch;
+    align-self: stretch; */
+    grid-area: hijito;
 }
 .aver img{
     margin: 10px;
@@ -330,32 +303,32 @@ ul {
     list-style-type: square;
 
 }
-#padre div { /* cada hijo */
-    border: solid 1px;
+.divs { /* cada hijo */
     font-size: 21px;
     padding: 5px;
 
 }
-#padre div img{
+.divs img{
     border-radius: 10px;
-    /* justify-items: center;
-    align-items: center; */
+    overflow: hidden;
+
 }
   
-#padre {  
+.padre {  
     display: grid;
     margin-left: 25px;
-    width: 1200px;
+    width: 100%;
     /* height: 1350px; */
-    border: dotted 1px red;
-    grid-template-columns: auto auto auto;
+    border: solid 1px #f8deae;
+    grid-template-columns: repeat(3, 3fr);
     grid-column-gap: 10px;
-    grid-template-rows: auto auto auto;
+    /* grid-template-rows: repeat(3, 2fr); */
     grid-row-gap: 10px;
     grid-template-areas:
-      "je . ."
-      "je . ."
-      "juju juju juju";
+      "hijo . ."
+      "hijo . ."
+      "hijito hijito hijito";
+      overflow: hidden;
      
 }
 
@@ -378,8 +351,8 @@ ul {
 /* MAPA DEL ESTUDIO */
 .map {
     padding: 5px;
-    max-width: 1200px;
-    width: 100%;
+    /* max-width: 1200px; */
+    width: 90%;
     height: 100%;
     
 }
@@ -414,4 +387,59 @@ ul {
     height: 150px;
     background-size: cover;
     
+}
+
+/* *********************** */
+/* MEDIAQUERIES */
+   
+
+@media screen and (max-width: 665px){
+    .courses__grid {
+        grid-template-columns: 1fr;
+    }
+    .courses__grid1{
+        grid-template-columns: 1fr;
+    }
+   
+    .menu__nav {
+        display: none;
+    }
+
+    .formulario{
+        display: none;
+    }
+    .contenidoFormulario{
+        display: none;
+    }
+    .map__img {
+        width: 100%;
+    }
+    .titulo{
+        width: 100%;
+
+    }
+    .titulo h1 {
+        font-size: 3rem;
+    }
+    .titulo h2{
+        display: none;
+    }
+    .padre{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  
+}
+
+@media screen and (max-width: 453px){
+    .titulo{
+        width: 100%;
+    }
+    .titulo h1{
+        font-size: 2rem;
+    }
+    .map__img{
+        width: 100%;
+    }
+
 }
