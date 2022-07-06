@@ -37,7 +37,7 @@ ul {
     margin-left: 15px;
 }
 .container{
-    max-width: 1200px;
+    max-width: 120vw;
     margin: 0 auto;
   
 }
@@ -134,13 +134,12 @@ ul {
     background-color: #f8deae;
     border-radius: 10px;
     color: #7e433e;
-    /* height: 30rem;
-    width: 30vw; */
+    /* height: 30rem; */
+    width: 90%;
     padding: 0.5rem;
     margin: 1rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0,0.5);
 }
-
 .card__title{
     margin: 5px;
     text-align: center;
@@ -165,14 +164,15 @@ ul {
     color: white;
     padding: 0.5rem;
     border-radius: 10px;
-    margin: 5px;
+    /* margin: 5px ; */
+    width: 50%;
+    margin-top: 0;
     display: inline-block;
-    text-align: justify;
+    text-align: center;
 }
 
 .card p{
     text-align: justify;
-    /* width: 80%; */
     margin-bottom: 5px;
     font-size: 16px;
 }
@@ -184,30 +184,15 @@ ul {
 }
 
 
-.button{
+/* .button{
     background-color: #7e433e;
     color: white;
     padding: 0.5rem;
     border-radius: 10px;
     margin: 5px;
-}
-
-/* @media (max-width: 992px) {
-    .contenedor{
-        display: grid;
-        gap:50px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 576px){
-    .contenedor{
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr;
-    }
+    align-self: end;
 } */
-/* ***** */
-
+/* *************** */
 .courses {
     margin-top: 35px;
     margin-bottom: 35px;
@@ -220,14 +205,14 @@ ul {
 }
 .courses__grid{
     display: grid;
-    grid-template-columns: repeat(3, 500px);
+    grid-template-columns: repeat(3, 5fr);
     /* margenes alrededorde cada celda */
-    gap: 10px;
-    justify-content: space-around;
+    gap: 5px;
+    /* justify-content: space-around; */
 }
 .courses__grid1{
     display: grid;
-    grid-template-columns: repeat(2, 500px);
+    grid-template-columns: repeat(2, 5fr);
     /* margenes alrededorde cada celda */
     gap: 10px;
     justify-content: space-around;
@@ -241,6 +226,58 @@ ul {
     margin-left: 30px;
     list-style-type: square;
 }
+/* mobile last */
+@media (max-width: 992px) {
+    .courses__grid {
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    .courses__grid1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .formulario{
+        display: none;
+    }
+    .contenidoFormulario{
+        display: none;
+    }
+    .map__img {
+        width: 90%;
+    }
+}
+   
+@media (max-width: 665px) {
+    .courses__grid {
+        grid-template-columns: 1fr;
+    }
+    .courses__grid1{
+        grid-template-columns: 1fr;
+    }
+   
+    .menu__nav {
+        display: none;
+    }
+
+    .formulario{
+        display: none;
+    }
+    .contenidoFormulario{
+        display: none;
+    }
+    .map__img {
+        width: 1fr;
+    }
+    .titulo{
+        width: 90%;
+
+    }
+    .titulo h1 {
+        font-size: 3rem;
+    }
+    .titulo h2{
+        display: none;
+    }
+}
+
 
 /* FORMULARIO FIJO  */
 .contenidoFormulario {
@@ -252,16 +289,15 @@ ul {
     right: 0;
     bottom: 0;
     position: fixed;
-
-}
-.contenidoFormulario {
     color: #7e433e;
     background-color: #f8deae;
     padding: 0.5rem;
     width: 320px;
     border-radius: 10px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0,0.5);
+
 }
+
 .formulario {
     text-align: left;
     line-height: 1.5rem;
