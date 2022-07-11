@@ -153,11 +153,12 @@ ul {
     background-color: #f8deae;
     border-radius: 10px;
     color: #7e433e;
-    /* height: 30rem; */
-    /* width: 90%; */
     padding: 0.5rem;
     margin: 1rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0,0.5);
+}
+.card:hover{
+    transform: translateY(15px);
 }
 .card__title{
     margin: 5px;
@@ -201,11 +202,11 @@ ul {
     border-radius: 10px;
     width: 100%;
     text-align: center;
-    align-items: flex-end;
-    align-content: flex-end;
-    justify-content: end;
+    transition: transform 0.3s;
 }
-
+.card__link:active{
+    transform: scale(0.9);
+}
 
 /* *************** */
 .courses {
