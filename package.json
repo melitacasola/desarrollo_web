@@ -1,0 +1,22 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melitacasola/desarrollo_web.git"
+  },
+  "author": "Melita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melitacasola/desarrollo_web/issues"
+  },
+  "homepage": "https://github.com/melitacasola/desarrollo_web#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

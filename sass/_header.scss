@@ -1,0 +1,77 @@
+.header {
+    background-color: $color2;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+    top: 0;
+    width: 100%;
+    position: sticky;
+    
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+        width: 85vw;
+        transition: transform 0.3s;
+
+        a:active{
+            transform: scale(0.9);
+        }
+    }
+    
+}
+
+
+.menu__nav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+    li{
+        margin: 0 15px;
+        transition: transform 0.3s;
+
+        &:active{
+            transform: scale(0.9);
+        }
+        a{
+            color: $letras;
+            border-bottom: 2px;
+            font-weight: bold;
+            transition: color 0.3s;
+
+            &:hover{
+                color: $sombras;
+            }
+
+        }
+    }
+    &-title{
+        font-family: 'Kalam';
+        color: $letras;
+        font-size: 4rem;
+        transition: color 0.3s;
+        font-weight: bold;
+        
+        &:hover{
+            color: $sombras;
+        }
+        &:hover::after{
+            content: 'inicio';
+            margin-left: 8px;
+            color: $sombras;
+            font-size: 2rem;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 665px){
+    .menu__nav {
+        display: none;
+    }
+  
+}

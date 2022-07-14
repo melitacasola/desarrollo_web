@@ -90,16 +90,16 @@ ul {
 .menu__nav li a:hover{
     color: #727F8F;
 }
-.menu__title{
+.menu__nav-title{
     font-family: 'Kalam';
     color: #f8deae;
     font-size: 4rem;
     transition: color 0.3s;
 }
-.menu__title:hover{
+.menu__nav-title:hover{
     color: #727F8F;
 }
-.menu__title:hover::after{
+.menu__nav-title:hover::after{
     content: 'inicio';
     margin-left: 8px;
     color: #727F8F;
@@ -132,7 +132,7 @@ ul {
     font-size: 16px;
     margin: 20px 15px;
 }
-.titulo2{
+.courses__titulo{
     font-family: 'Kalam';
     src: url('../font/Kalam-Bold.ttf');
     font-size: 2.5rem;
@@ -140,7 +140,7 @@ ul {
     margin-top: 30px;
     padding-left: 3rem;    
 }
-.listaCursos{
+.card__description-list{
     display: inline-block;
     margin-top: 5px;
     padding-top: 0;
@@ -186,7 +186,7 @@ ul {
 }
 .card__link{
     background-color: #7e433e;
-    color: white;
+    color: #f8deae;
     padding: 0.5rem;
     border-radius: 10px;
     width: 100%;
@@ -201,7 +201,7 @@ ul {
     font-size: 16px;
 }
 
-.cardVideo{
+.card__video{
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -213,11 +213,7 @@ ul {
     margin-bottom: 35px;
 
 }
-.courses__title {
-    font-size: 25px;
-    margin-bottom: 20px;
-    text-align: center;
-}
+
 .courses__grid{
     display: grid;
     grid-template-columns: repeat(3, 5fr);
@@ -243,7 +239,7 @@ ul {
 }
 
 /* FORMULARIO FIJO  */
-.contenidoFormulario {
+.formulario {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -261,7 +257,7 @@ ul {
 
 }
 
-.formulario {
+.formulario__form {
     text-align: left;
     line-height: 1.5rem;
     box-sizing: border-box;
@@ -404,7 +400,7 @@ ul {
     .formulario{
         display: none;
     }
-    .contenidoFormulario{
+    .formulario__form{
         display: none;
     }
     .map__img {
@@ -435,7 +431,7 @@ ul {
     .formulario{
         display: none;
     }
-    .contenidoFormulario{
+    .formulario__form{
         display: none;
     }
     .map__img {

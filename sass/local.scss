@@ -1,0 +1,108 @@
+.padre {  
+    display: grid;
+    margin-left: 25px;
+    width: 100%;
+    border: solid 1px $letras;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 10px;
+    grid-template-areas:
+      "hijo . ."
+      "hijo . ."
+      "hijito hijito hijito";
+      overflow: hidden;  
+}
+.hijo {
+    grid-area: hijo;
+    img{
+        height: 100% ;
+    }
+}
+.aver{
+    grid-area: hijito;
+
+    img{
+        margin: 10px;
+        height: 85%;
+    }
+
+    article{
+        display: inline-block; 
+        
+        ul li {
+            margin-left: 10px;
+            list-style-type: square;
+        }
+    }
+}
+
+.divs {
+    font-size: 21px;
+    padding: 5px;
+
+    img{
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    color: $color2;
+    background-color: $letras;
+    padding: 0.5rem;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0,0.5);
+    
+    &__form{
+        text-align: left;
+        line-height: 1.5rem;
+        box-sizing: border-box;
+        width: 100%;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 992px) {
+    .formulario{
+        display: none;
+        &__form{
+            display: none;
+        }
+    }    
+
+    .padre{
+        display: block;
+        overflow: hidden;
+    }
+    .hijo{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 665px){
+    .formulario{
+        display: none;
+        &__form{
+            display: none;
+        }
+    }
+   
+    .padre{
+        display: block;
+    }
+  
+}
+
+@media screen and (max-width: 453px){
+    .padre{
+        display: block;
+    }
+}
