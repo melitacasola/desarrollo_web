@@ -5,9 +5,11 @@
     padding: 0.5rem;
     margin: 1rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0,0.5);
+    z-index: 0;
 
     &:hover{
         transform: translateY(15px);
+        z-index: 0;
     }
 
     &__title{
@@ -22,6 +24,7 @@
         border-radius: 10px;
         margin-bottom: 20px;
         height: 350px;
+        z-index: 0;
     }
 
     &__description{
@@ -155,17 +158,19 @@
 }
 
 
-@media screen and (max-width: 665px){
+@media screen and (max-width: 768px){
     .courses__grid {
         grid-template-columns: 1fr;
     }
     .courses__grid1{
         grid-template-columns: 1fr;
     }
-
+    .card__header img{
+        object-fit: cover;
+    }
 }
 
-@media screen and (max-width: 453px){
+@media screen and (max-width: 576px){
     .map__img{
         width: 100%;
     }
