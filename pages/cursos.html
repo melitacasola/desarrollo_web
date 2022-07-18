@@ -7,18 +7,24 @@
     <title>CURSOS</title>
     <link rel="shortcut icon" href="../assets/5f45648162fa090004df3ccb.png" />
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <script defer src="../assets/js/index.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
 </head>
 <body>
     <header class="header"> 
             <nav class="header__menu container">
-                <a href="../index.html" class="menu__title">HCC!</a>
-            <ul class="menu__nav">
-                <strong><li><a href="./nosotras.html">NOSOTRAS</a></li></strong>
-                <strong><li><a href="./cursos.html">CURSOS</a></li></strong>
-                <strong><li><a href="./cowork.html">ESPACIO DE TRABAJO</a></li></strong>
-            </ul>
-          </nav>
+
+                <a href="../index.html" class="menu__nav-title">HCC!</a>
+                <button class="menu__nav-toggle">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <ul class="menu__nav">
+                    <li><a href="./nosotras.html">NOSOTRAS</a></li>
+                    <li><a href="./cursos.html">CURSOS</a></li>
+                    <li><a href="./cowork.html">ESPACIO DE TRABAJO</a></li>
+                </ul>
+            </nav>
     </header>
     <main>
         <section class="titulo">
@@ -115,9 +121,9 @@
 
        
 
-        <section class="contenidoFormulario">
+        <section class="formulario">
             <h3>INSCRIPCIONES - info</h3>
-            <form class="formulario" action="">
+            <form class="formulario__form" action="">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre..."/>
                 <br />

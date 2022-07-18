@@ -32,7 +32,6 @@ p {
     text-align: justify;
 }
 ul {
-    /* saca viñetita a la lista */
     list-style-type: none;
     margin-left: 15px;
 }
@@ -45,11 +44,11 @@ ul {
     background-color: #7e433e;
     padding: 30px 20px;
     display: flex;
-    justify-content: center;
     height: 10rem;
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 4;
     
 }
 .header__menu{
@@ -67,6 +66,7 @@ ul {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    align-items: center;
 }
 
 .menu__nav li {
@@ -86,40 +86,53 @@ ul {
 .menu__nav li a:hover{
     color: #727F8F;
 }
-.menu__title{
+.menu__nav-title{
     font-family: 'Kalam';
     color: #f8deae;
     font-size: 4rem;
     transition: color 0.3s;
 }
-.menu__title:hover{
+.menu__nav-title:hover{
     color: #727F8F;
 }
-.menu__title:hover::after{
+.menu__nav-title:hover::after{
     content: 'inicio';
     margin-left: 8px;
     color: #727F8F;
     font-size: 2rem;
 }
 
+.menu__nav-toggle {
+    color: #f8deae;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    display: none;
+    cursor: pointer; 
+}
+
+
 .titulo{
     background-image: url('../img/fondoJusticia.jpg');
-    height: 45vh;
+    height: 55vh;
     background-size: cover;
     background-attachment: fixed;
 }
 .titulo h1{
     font-family: 'Kalam';
-    font-size: 5rem;
+    font-size: 6rem;
     letter-spacing: 15px;
     margin-left: 1.5rem;
+    text-shadow: 0.1em 0.1em 0.2em black;
 }
 .titulo h2{
     font-family: 'Kalam';
-    font-size: 3rem;
+    font-size: 4rem;
     letter-spacing: 5px;
     margin-left:3.5rem;
     justify-content: center;
+    text-shadow: 0.1em 0.1em 0.2em black;
 }
 
 /* INDEX */
@@ -156,6 +169,7 @@ ul {
     padding: 0.5rem;
     margin: 1rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0,0.5);
+    z-index: 0;
 }
 .card:hover{
     transform: translateY(15px);
@@ -169,27 +183,27 @@ ul {
 .card__title{
     margin: 5px;
     text-align: center;
-    font-style: bold;
+    font-weight: bold;
     font-size: 1.5rem;
+    padding: 5px;
 }
 
 .card__header img{
-    /* esta imagen toma el 100% del contenedor */
     width: 100%;
     border-radius: 10px;
     margin-bottom: 20px;
-    height: 250px;
+    height: 350px;
+    z-index: 0;
 }
 .card__header video{
     width: 100%;
     border-radius: 10px;
     margin-bottom: 20px;
-    height: 250px;
+    height: 350px;
     object-fit: cover;
 
 }
 .card__header1 img{
-    /* esta imagen toma el 100% del contenedor */
     width: 100%;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -228,9 +242,7 @@ ul {
 .courses__grid{
     display: grid;
     grid-template-columns: repeat(3, 5fr);
-    /* margenes alrededorde cada celda */
     gap: 5px;
-    /* justify-content: space-around; */
 }
 .courses__grid1{
     display: grid;
@@ -251,7 +263,7 @@ ul {
 
 
 /* FORMULARIO FIJO  */
-.contenidoFormulario {
+.formulario {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -268,7 +280,7 @@ ul {
 
 }
 
-.formulario {
+.formulario__form {
     text-align: left;
     line-height: 1.5rem;
     box-sizing: border-box;
@@ -277,7 +289,22 @@ ul {
 }
 
 /* COWORKING */
-.hijo { /* un solo hijo */
+.padre {  
+    display: grid;
+    margin-left: 25px;
+    width: 100%;
+    border: solid 1px #f8deae;
+    grid-template-columns: repeat(3, 3fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+      "hijo . ."
+      "hijo . ."
+      "hijito hijito hijito";
+      overflow: hidden;   
+}
+
+.hijo {
     grid-area: hijo;
 }
 .hijo img{
@@ -308,23 +335,6 @@ ul {
     overflow: hidden;
 
 }
-  
-.padre {  
-    display: grid;
-    margin-left: 25px;
-    width: 100%;
-    border: solid 1px #f8deae;
-    grid-template-columns: repeat(3, 3fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    grid-template-areas:
-      "hijo . ."
-      "hijo . ."
-      "hijito hijito hijito";
-      overflow: hidden;
-     
-}
-
 
 
 /* whatsApp */
@@ -353,8 +363,15 @@ ul {
     border: solid 5px #f8deae;
     border-radius: 10px;
     margin-left: 15px;
-
 }
+.map__img h2{
+    font-size: 20px;
+}
+.map__img p {
+    font-size: 18px;
+    margin: 20px 15px;
+}
+/* **************** */
 
 /* footer */
 .footer{
@@ -390,10 +407,13 @@ ul {
 /* *********************** */
 /* MEDIAQUERIES */
 
-@media (max-width: 960px) {
-
+@media (max-width: 992px) {
     .padre{
-        display: none;
+        display: block;
+        overflow: hidden;
+    }
+    .hijo{
+        width: 80%;
     }
 
     .courses__grid {
@@ -405,7 +425,7 @@ ul {
     .formulario{
         display: none;
     }
-    .contenidoFormulario{
+    .formulario__form{
         display: none;
     }
     .map__img {
@@ -423,13 +443,33 @@ ul {
     }
    
     .menu__nav {
-        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #7e433e;
+        position: fixed;
+        left: 0;
+        top: 10rem;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 10rem);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.5s;
+
+    }
+
+    .menu__nav-toggle{
+        display: block;
+    }
+    .menu__nav-visible{
+        left: 0;
     }
 
     .formulario{
         display: none;
     }
-    .contenidoFormulario{
+    .formulario__form{
         display: none;
     }
     .map__img {
@@ -440,7 +480,7 @@ ul {
 
     }
     .titulo h1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .titulo h2{
         display: none;
@@ -449,11 +489,14 @@ ul {
 }
 
 @media screen and (max-width: 540px){
+    .padre{
+        display: none;
+    }
     .titulo{
         width: 100%;
     }
     .titulo h1{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .map__img{
         width: 100%;
@@ -463,7 +506,7 @@ ul {
     }
 }
 
-@media (min-width:959.98px){
+@media (min-width:539.98px){
     #prueba{
         display: none;
     }
