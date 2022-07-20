@@ -354,22 +354,24 @@ ul {
     font-weight: bold; }
 
 @media (max-width: 992px) {
-  .formulario {
-    display: none; }
-    .formulario__form {
-      display: none; }
   .padre {
     display: block;
     overflow: hidden; }
   .hijo {
-    width: 80%; } }
-
-@media screen and (max-width: 665px) {
+    width: 80%; }
   .formulario {
     display: none; }
     .formulario__form {
       display: none; } }
 
-@media screen and (max-width: 453px) {
+@media screen and (max-width: 665px) {
   .padre {
-    display: block; } }
+    display: none; }
+  .formulario {
+    display: none; }
+    .formulario__form {
+      display: none; } }
+
+@media (min-width: 664.98px) {
+  #prueba {
+    display: none; } }
