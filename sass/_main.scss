@@ -1,7 +1,7 @@
 .card{
-    background-color: #f8deae;
-    border-radius: 10px;
-    color: #7e433e;
+    background-color: $letras;
+    border-radius: $border;
+    color: $color2;
     padding: 0.5rem;
     margin: 1rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0,0.5);
@@ -13,41 +13,32 @@
     }
 
     &__title{
-        margin: 5px;
+        margin: $pad;
         text-align: center;
         font-weight: bold;
         font-size: 1.5rem;
     }
 
-    &__header img{
-        width: 100%;
-        border-radius: 10px;
-        margin-bottom: 20px;
+    img{
+        width: $max;
+        border-radius: $border;
+        margin-bottom: $marg;
         height: 350px;
         z-index: 0;
     }
 
     &__description{
-        padding: 5px;
-        margin: 10px;
+        padding: $pad;
+        margin: $marg;
 
-        &-list{
-            display: inline-block;
-            margin-top: 5px;
-            padding-top: 0;
-            margin-left: 2rem;
-            height: 0%;
-            justify-content: space-around;
-            font-size: 1.5rem;
-        }
     }
     
     &__link{
-        background-color: #7e433e;
+        background-color: $color2;
         color: white;
-        padding: 0.5rem;
-        border-radius: 10px;
-        width: 100%;
+        padding: $pad;
+        border-radius: $border;
+        width: $max;
         display: inline-block;
         text-align: center;
         transition: transform 0.3s;
@@ -56,16 +47,12 @@
             transform: scale(0.9);
         }
     }
-    p {
-        text-align: justify;
-        margin-bottom: 5px;
-        font-size: 16px;
-    }
+
     &__video{
-        width: 100%;
+        width: $max;
         height: 350px;
-        border-radius: 10px;
-        margin-bottom: 20px;
+        border-radius: $border;
+        margin-bottom: $marg;
         object-fit: cover;
     }
 }
@@ -81,10 +68,8 @@
         gap: 5px;
     }
     &__grid1{
-        display: grid;
+        @extend .courses__grid;
         grid-template-columns: repeat(2, 5fr);
-        /* margenes alrededorde cada celda */
-        gap: 10px;
         justify-content: space-around;
     }
     &__titulo{
@@ -100,7 +85,7 @@
 .cursado{
     padding: 1rem;
     font-size: 18px;
-    margin: 20px 10px;
+    margin: $marg 10px;
 
     ul li{
         margin-left: 30px;
@@ -122,9 +107,9 @@
 }
 
 .map {
-    padding: 5px;
+    padding: $pad;
     width: 90%;
-    height: 100%;
+    height: $max;
     
     &__img{
         margin-left: 15px;
@@ -137,8 +122,8 @@
             margin: 20px 15px;
         }
         img{
-            width: 100%;
-            border-radius: 10px;
+            width: $max;
+            border-radius: $border;
             border: solid 5px #f8deae;
         }
     }
@@ -172,6 +157,6 @@
 
 @media screen and (max-width: 576px){
     .map__img{
-        width: 100%;
+        width: $max;
     }
 }

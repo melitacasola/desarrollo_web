@@ -1,13 +1,16 @@
+@import 'variables';
 .footer{
     background-color: $color2;
     color: $letras;
     padding: 30px 20px;
-    margin-top: 50px;
+    margin-top: $marg;
+    height: 80px;
     
     &__grid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 50px;
+        background-color: $color2;
 
         h3{
             text-align: center;
@@ -16,7 +19,8 @@
     &__rrss{
         margin-top: 30px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        background-color: $color2;
 
         a{
             color: $letras;
@@ -26,5 +30,34 @@
                 color: $sombras;
             }
         }
+        $redes: (
+
+        facebook: #2279e4,
+        ig: #c92d8f,
+        tw: #00acee,
+    );
+    @each $nombre, $color in $redes {
+        .link-#{$nombre} {
+            margin: 10px;
+            padding: $pad;
+            border-radius:$border;
+            color: white;
+            text-decoration: none;
+            background-color: $color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        } 
+    }
+    }
+    
+}
+@media screen and (max-width: 720px){
+    .footer__rrss{
+        display: grid;
+        grid-template-columns: 1f;
     }
 }
+
+

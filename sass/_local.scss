@@ -1,7 +1,7 @@
 .padre {  
     display: grid;
     margin-left: 25px;
-    width: 100%;
+    width: $max;
     border: solid 1px $letras;
     grid-template-columns: repeat(3, 3fr);
     gap: 10px;
@@ -14,7 +14,7 @@
 .hijo {
     grid-area: hijo;
     img{
-        height: 100% ;
+        height: $max;
     }
 }
 .aver{
@@ -37,10 +37,10 @@
 
 .divs {
     font-size: 21px;
-    padding: 5px;
+    padding: $pad;
 
     img{
-        border-radius: 10px;
+        border-radius: $border;
         overflow: hidden;
     }
 }
@@ -48,27 +48,44 @@
 .formulario {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     right: 0;
-    bottom: 0;
+    bottom: 10px;
     position: fixed;
     color: $color2;
     background-color: $letras;
     padding: 0.5rem;
-    width: 320px;
-    border-radius: 10px;
+    width: 350px;
+    border-radius: $border;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0,0.5);
     
     &__form{
         text-align: left;
         line-height: 1.5rem;
         box-sizing: border-box;
-        width: 100%;
+        width: $max;
         font-weight: bold;
+        line-height: 1.66;
     }
 }
+.carrusel {
+    @extend .card;
+    border: 2px solid $color1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin: $marg;
 
+}
+
+.carousel-item{
+    transition: transform 1s easy, opacity .5s;
+
+    img {
+        border-radius: 20px;
+    }
+}
 @media (max-width: 992px) {
     .padre{
         display: block;
@@ -79,9 +96,14 @@
     }
        
     .formulario{
-        display: none;
+        display: block;
+        width: 70%;
+        position: relative;
+        margin: $marg;
+        padding: 20px;
         &__form{
-            display: none;
+            width: $max;
+        
         }
     }    
 }
@@ -92,16 +114,19 @@
         display: none;
     }
     .formulario{
-        display: none;
+        display: block;
+        width: 70%;
+        position: relative;
+        margin-left: $marg;
         &__form{
-            display: none;
+            width: $max;     
         }
-    }
+    }  
   
 }
 
-@media (min-width:664.98px){
-    #prueba{
+@media (min-width:665px){
+    #carrusel{
         display: none;
     }
 }
