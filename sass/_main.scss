@@ -1,3 +1,11 @@
+@mixin mainImagen(){
+    width: $max;
+    margin-bottom: $marg;
+    border-radius: $border;
+    object-fit: cover;
+    height: 350px;
+}
+
 .card{
     background-color: $letras;
     border-radius: $border;
@@ -20,10 +28,8 @@
     }
 
     img{
-        width: $max;
-        border-radius: $border;
+        @include mainImagen();
         margin-bottom: $marg;
-        height: 350px;
         z-index: 0;
     }
 
@@ -49,11 +55,7 @@
     }
 
     &__video{
-        width: $max;
-        height: 350px;
-        border-radius: $border;
-        margin-bottom: $marg;
-        object-fit: cover;
+        @include mainImagen();
     }
 }
 
@@ -106,11 +108,27 @@
     position: fixed;
 }
 
+.contenedor{
+    @extend .courses__grid;
+    grid-template-columns: repeat(2, 5fr);
+    justify-content: center;
+    gap: 20px;
+}
+.formulario{
+    @extend .courses;
+    &__form{
+        @extend .card;
+        margin-top: 65px;
+        height: 350px;
+        margin-right: 50px;
+        justify-content: center;
+    }
+}
+
 .map {
+    @extend .card;
     padding: $pad;
-    width: 90%;
     height: $max;
-    
     &__img{
         margin-left: 15px;
         
@@ -122,9 +140,10 @@
             margin: 20px 15px;
         }
         img{
-            width: $max;
-            border-radius: $border;
+            @include mainImagen();
+            z-index: 0;
             border: solid 5px #f8deae;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0,0.5);
         }
     }
 }
@@ -137,9 +156,13 @@
     .courses__grid1 {
         grid-template-columns: repeat(2, 1fr);
     }
-    .map__img {
+    .contenedor{
+        grid-template-columns: 1fr;
+    }
+    .map__img img{
         width: 90%;
     }
+
 }
 
 
@@ -149,14 +172,5 @@
     }
     .courses__grid1{
         grid-template-columns: 1fr;
-    }
-    .card__header img{
-        object-fit: cover;
-    }
-}
-
-@media screen and (max-width: 576px){
-    .map__img{
-        width: $max;
-    }
+    }  
 }

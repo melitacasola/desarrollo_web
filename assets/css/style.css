@@ -37,12 +37,10 @@ ul {
   margin: 0 auto; }
 
 .titulo {
-  background-image: url(../assets/img/fondoJusticia.jpg);
   background-image: url("../assets/img/fondoJusticia.jpg");
-  background-image: url("../assets/img/fondoJusticia.jpg");
-  height: 400px;
-  background-attachment: fixed;
-  background-size: cover; }
+  height: 55vh;
+  background-size: cover;
+  background-attachment: fixed; }
   .titulo h1 {
     font-family: 'Kalam';
     font-size: 6rem;
@@ -148,15 +146,15 @@ ul {
     .menu__nav-visible {
       left: 0; } }
 
-.card, .carrusel {
+.card, .formulario__form, .map, .carrusel {
   background-color: #f8deae;
-  border-radius: 10px;
+  border-radius: 20px;
   color: #7e433e;
   padding: 0.5rem;
   margin: 1rem;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
   z-index: 0; }
-  .card:hover, .carrusel:hover {
+  .card:hover, .formulario__form:hover, .map:hover, .carrusel:hover {
     transform: translateY(15px);
     z-index: 0; }
   .card__title {
@@ -164,11 +162,13 @@ ul {
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem; }
-  .card img, .carrusel img {
+  .card img, .formulario__form img, .map img, .carrusel img {
     width: 100%;
-    border-radius: 10px;
     margin-bottom: 20px;
+    border-radius: 20px;
+    object-fit: cover;
     height: 350px;
+    margin-bottom: 20px;
     z-index: 0; }
   .card__description {
     padding: 5px;
@@ -177,7 +177,7 @@ ul {
     background-color: #7e433e;
     color: white;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 100%;
     display: inline-block;
     text-align: center;
@@ -186,15 +186,15 @@ ul {
       transform: scale(0.9); }
   .card__video {
     width: 100%;
-    height: 350px;
-    border-radius: 10px;
     margin-bottom: 20px;
-    object-fit: cover; }
+    border-radius: 20px;
+    object-fit: cover;
+    height: 350px; }
 
-.courses {
+.courses, .formulario {
   margin-top: 35px;
   margin-bottom: 35px; }
-  .courses__grid, .courses__grid1 {
+  .courses__grid, .courses__grid1, .contenedor {
     display: grid;
     grid-template-columns: repeat(3, 5fr);
     gap: 5px; }
@@ -228,9 +228,19 @@ ul {
   bottom: 0;
   position: fixed; }
 
+.contenedor {
+  grid-template-columns: repeat(2, 5fr);
+  justify-content: center;
+  gap: 20px; }
+
+.formulario__form {
+  margin-top: 65px;
+  height: 350px;
+  margin-right: 50px;
+  justify-content: center; }
+
 .map {
   padding: 5px;
-  width: 90%;
   height: 100%; }
   .map__img {
     margin-left: 15px; }
@@ -241,28 +251,29 @@ ul {
       margin: 20px 15px; }
     .map__img img {
       width: 100%;
-      border-radius: 10px;
-      border: solid 5px #f8deae; }
+      margin-bottom: 20px;
+      border-radius: 20px;
+      object-fit: cover;
+      height: 350px;
+      z-index: 0;
+      border: solid 5px #f8deae;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
 
 @media (max-width: 992px) {
-  .courses__grid, .courses__grid1 {
+  .courses__grid, .courses__grid1, .contenedor {
     grid-template-columns: repeat(2, 1fr); }
   .courses__grid1 {
     grid-template-columns: repeat(2, 1fr); }
-  .map__img {
+  .contenedor {
+    grid-template-columns: 1fr; }
+  .map__img img {
     width: 90%; } }
 
 @media screen and (max-width: 768px) {
-  .courses__grid, .courses__grid1 {
+  .courses__grid, .courses__grid1, .contenedor {
     grid-template-columns: 1fr; }
   .courses__grid1 {
-    grid-template-columns: 1fr; }
-  .card__header img {
-    object-fit: cover; } }
-
-@media screen and (max-width: 576px) {
-  .map__img {
-    width: 100%; } }
+    grid-template-columns: 1fr; } }
 
 .footer {
   background-color: #7e433e;
@@ -359,29 +370,8 @@ ul {
   font-size: 21px;
   padding: 5px; }
   .divs img {
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden; }
-
-.formulario {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  right: 0;
-  bottom: 10px;
-  position: fixed;
-  color: #7e433e;
-  background-color: #f8deae;
-  padding: 0.5rem;
-  width: 350px;
-  border-radius: 10px;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
-  .formulario__form {
-    text-align: left;
-    line-height: 1.5rem;
-    box-sizing: border-box;
-    width: 100%;
-    font-weight: bold;
-    line-height: 1.66; }
 
 .carrusel {
   border: 2px solid #b87a63;
@@ -401,26 +391,11 @@ ul {
     display: block;
     overflow: hidden; }
   .hijo {
-    width: 80%; }
-  .formulario {
-    display: block;
-    width: 70%;
-    position: relative;
-    margin: 20px;
-    padding: 20px; }
-    .formulario__form {
-      width: 100%; } }
+    width: 80%; } }
 
 @media screen and (max-width: 665px) {
   .padre {
-    display: none; }
-  .formulario {
-    display: block;
-    width: 70%;
-    position: relative;
-    margin-left: 20px; }
-    .formulario__form {
-      width: 100%; } }
+    display: none; } }
 
 @media (min-width: 665px) {
   #carrusel {

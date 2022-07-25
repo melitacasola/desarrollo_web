@@ -45,29 +45,6 @@
     }
 }
 
-.formulario {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    right: 0;
-    bottom: 10px;
-    position: fixed;
-    color: $color2;
-    background-color: $letras;
-    padding: 0.5rem;
-    width: 350px;
-    border-radius: $border;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0,0.5);
-    
-    &__form{
-        text-align: left;
-        line-height: 1.5rem;
-        box-sizing: border-box;
-        width: $max;
-        font-weight: bold;
-        line-height: 1.66;
-    }
-}
 .carrusel {
     @extend .card;
     border: 2px solid $color1;
@@ -76,7 +53,6 @@
     justify-content: center;
     width: 500px;
     margin: $marg;
-
 }
 
 .carousel-item{
@@ -94,33 +70,13 @@
     .hijo{
         width: 80%;
     }
-       
-    .formulario{
-        display: block;
-        width: 70%;
-        position: relative;
-        margin: $marg;
-        padding: 20px;
-        &__form{
-            width: $max;
-        
-        }
-    }    
+   
 }
 
 
 @media screen and (max-width: 665px){
     .padre{
         display: none;
-    }
-    .formulario{
-        display: block;
-        width: 70%;
-        position: relative;
-        margin-left: $marg;
-        &__form{
-            width: $max;     
-        }
     }  
   
 }

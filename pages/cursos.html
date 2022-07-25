@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
     <title>CURSOS</title>
+    <meta name="description" content="Espacio de Formación Académica y  Profesional en el ámbito jurídico.">
     <link rel="shortcut icon" href="../assets/5f45648162fa090004df3ccb.png" />
     <script src="https://kit.fontawesome.com/4bc4df3516.js" crossorigin="anonymous"></script>
     <script defer src="../assets/js/index.js"></script>
@@ -38,9 +39,9 @@
             <h3 class="courses__titulo">NUESTROS CURSOS</h3>
             <div class="courses__grid1">
                 <article class="card">
-                    <div class="card__header">
-                        <img src="../assets/img/divorcio.jpg" alt="Marcas" />
-                    </div>
+                    
+                    <img src="../assets/img/divorcio.jpg" alt="Marcas" />
+                    
                     <h4 class="card__title"> PATENTES Y REGISTRO DE MARCAS </h4>
                     <p class="card__description">Que se puede o no registrar como Marca; Busqueda de disponibilidad. Clasificación Marcaria. Etapas del Tramite, presentación y seguimiento. Vicisitudes.</p>
                     <a class="card__link" href="">saber mas</a>
@@ -51,12 +52,9 @@
                     <p class="card__description">Constitución de Sociedades Anónimas, Simplificadas y de Responsabilidad Limitada. Registro de Actas y Libros. Etapas del Tramite, presentación y seguimiento. Vicisitudes.</p>
                     <a class="card__link" href="">saber mas</a>
                 </article>
-            
-            
-                <article class="card">
-                    
+
+                <article class="card">            
                     <img src="../assets/img/Acuerdo.jpg" alt="Consumidor" />
-                    
                     <h4 class="card__title"> DEFENSA DEL CONSUMIDOR </h4>
                     <p class="card__description">Principios y Conceptos Fundamentales del C.C.C.N. Ley 24.240 y modif. Etapas: Judicial y Extra Judicial, presentación y seguimiento ante las Reparticiones Públicas. Vicisitudes.</p>
                     <a class="card__link" href="">saber mas</a>
@@ -115,53 +113,54 @@
                         <li>Mercado Pago</li>
                         <li>Tarjeta de Credito</li>
                     </ul>       
-                    
-        <section class="map">
+        </section>   
+        
+        <section class="map contenedor">
             <div class="map__img">
                 <h2>Dónde Estamos: </h2>
-                <p class="text">Nos encontramos en Rosario de Santa Fé N° 1000, Barrio General Paz, de la Ciudad de Córdoba, Argentina</p>
-                <img src="../assets/img/mapa.jpg" alt="mapa" width="500" height="400" />
+                <p>Nos encontramos en Rosario de Santa Fé N° 1000, Barrio General Paz, de la Ciudad de Córdoba, Argentina</p>
+                <img src="../assets/img/mapa.jpg" alt="mapa"/>
             </div>
+            <div class="formulario">
+                <h2>INSCRIPCIONES - info</h2>
+                <form class="formulario__form" action="">
+                  <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre..."/>
+                  </div>
+                  <div>
+                    <label for="cel">telefono de contacto:</label>
+                    <input type="number" id="cel" name="cel" placeholder="+549..."/>
+                  </div>
+                  <div>
+                    <label class="formulario__form--mod" for="correo">Correo electronico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Email"/>
+                  </div>
+                      <label for="consulta">Ingrese un mensaje:</label>
+                  <div>
+                    <textarea name="consulta" id="consulta" cols="35" rows="8.5" placeholder="Consulta..."></textarea>
+                  </div>
+                  <div>
+                    <label for="curso">Curso:</label>
+                    <select name="curso" id="curso">
+                      <option value="PATENTES Y REGISTRO DE MARCAS">PATENTES Y REGISTRO DE MARCAS</option>
+                      <option value="CONSTITUCION DE SOCIEDADES">CONSTITUCION DE SOCIEDADES</option>
+                      <option value="REGIMEN COMUNICACIONAL Y CUOTA ALIMENTARIA">REGIMEN COMUNICACIONAL Y CUOTA ALIMENTARIA</option>
+                      <option value="REGIMEN PREVISIONAL">REGIMEN PREVISIONAL</option>
+                    </select>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="newsletter" />
+                    <label for="newsletter">Suscribite a nuestras novedades</label>
+                  </div>
+                  <div>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                  </div>
+                </form>
+            </div> 
         </section>
-    </section>
-    <section class="formulario">
-        <h3>INSCRIPCIONES - info</h3>
-        <form class="formulario__form" action="">
-          <div>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre..."/>
-          </div>
-          <div>
-            <label for="cel">telefono de contacto:</label>
-            <input type="number" id="cel" name="cel" placeholder="+549..."/>
-          </div>
-          <div>
-            <label class="formulario__form--mod" for="correo">Correo electronico:</label>
-            <input type="email" id="correo" name="correo" placeholder="Email"/>
-          </div>
-              <label for="consulta">Ingrese un mensaje:</label>
-          <div>
-            <textarea name="consulta" id="consulta" cols="35" rows="8.5" placeholder="Consulta..."></textarea>
-          </div>
-          <div>
-            <label for="curso">Curso:</label>
-            <select name="curso" id="curso">
-              <option value="PATENTES Y REGISTRO DE MARCAS">PATENTES Y REGISTRO DE MARCAS</option>
-              <option value="CONSTITUCION DE SOCIEDADES">CONSTITUCION DE SOCIEDADES</option>
-              <option value="REGIMEN COMUNICACIONAL Y CUOTA ALIMENTARIA">REGIMEN COMUNICACIONAL Y CUOTA ALIMENTARIA</option>
-              <option value="REGIMEN PREVISIONAL">REGIMEN PREVISIONAL</option>
-            </select>
-          </div>
-          <div>
-            <input type="checkbox" id="newsletter" />
-            <label for="newsletter">Suscribite a nuestras novedades</label>
-          </div>
-          <div>
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
-          </div>
-        </form>
-    </section>  
+    </section> 
 
     </main>
     <footer class="footer">

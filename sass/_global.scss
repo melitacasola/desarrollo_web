@@ -41,12 +41,10 @@ ul {
 }
 
 .titulo{
-    background-image: url(../assets/img/fondoJusticia.jpg);
-    background-image: url("../assets/img/fondoJusticia.jpg");
     background-image: url('../assets/img/fondoJusticia.jpg');
-    height: 400px;
-    background-attachment: fixed;
+    height: 55vh;
     background-size: cover;
+    background-attachment: fixed;
     
     h1{
         font-family: 'Kalam';
@@ -68,7 +66,7 @@ ul {
 
 @media screen and (max-width: 720px){
     .titulo{
-        width: $max;
+        width: 100%;
         h1{
             font-size: 4rem;
         }
