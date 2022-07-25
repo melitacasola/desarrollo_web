@@ -12,7 +12,7 @@
 }
 html{
     font-size: 62.5%;
-    // background-color: $color2;
+    background-color: $color2;
 }
 body {
     font-family: 'Biryani';
@@ -42,9 +42,11 @@ ul {
 
 .titulo{
     background-image: url(../assets/img/fondoJusticia.jpg);
-    background-size: cover;   
+    background-image: url("../assets/img/fondoJusticia.jpg");
+    background-image: url('../assets/img/fondoJusticia.jpg');
     height: 400px;
     background-attachment: fixed;
+    background-size: cover;
     
     h1{
         font-family: 'Kalam';

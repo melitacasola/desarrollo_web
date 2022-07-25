@@ -10,7 +10,8 @@
   list-style: none; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  background-color: #7e433e; }
 
 body {
   font-family: 'Biryani';
@@ -37,9 +38,11 @@ ul {
 
 .titulo {
   background-image: url(../assets/img/fondoJusticia.jpg);
-  background-size: cover;
+  background-image: url("../assets/img/fondoJusticia.jpg");
+  background-image: url("../assets/img/fondoJusticia.jpg");
   height: 400px;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-size: cover; }
   .titulo h1 {
     font-family: 'Kalam';
     font-size: 6rem;
@@ -294,7 +297,8 @@ ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 5px; }
+      gap: 5px;
+      text-align: center; }
     .footer__rrss .link-ig {
       margin: 10px;
       padding: 5px;
@@ -305,7 +309,8 @@ ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 5px; }
+      gap: 5px;
+      text-align: center; }
     .footer__rrss .link-tw {
       margin: 10px;
       padding: 5px;
@@ -316,7 +321,8 @@ ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 5px; }
+      gap: 5px;
+      text-align: center; }
 
 @media screen and (max-width: 720px) {
   .footer__rrss {
