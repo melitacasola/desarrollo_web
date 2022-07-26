@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <title>Proyecto CoderHouse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
+    <title>Hola Córdoba Asesoramiento Jurídico</title>
+    <meta name="description" content="Espacio de formacion y asesoramiento Jurídico - una nueva forma de encarar el Derecho">
     <link rel="shortcut icon" href="./assets/5f45648162fa090004df3ccb.png" />
+    <script src="https://kit.fontawesome.com/4bc4df3516.js" crossorigin="anonymous"></script>
     <script defer src="./assets/js/index.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
@@ -17,7 +22,8 @@
         <nav class="header__menu container">
             <a href="./index.html" class="menu__nav-title">HCC!</a>
             <button class="menu__nav-toggle">
-                <i class="bi bi-list"></i>
+                <i class="fa-solid fa-bars"></i>
+
             </button>
             <ul class="menu__nav">
                 <li><a href="./pages/nosotras.html">NOSOTRAS</a></li>
@@ -28,48 +34,45 @@
     </header>
 
     <main>
-        <section class="titulo">
-            <h1>HOLA CORDOBA COWORKING!</h1>
-            <h2>Servicio de Profesionales</h2>
+        <section class="container">
+            <div class="titulo">
+                <h1>HOLA CORDOBA COWORKING!</h1>
+                <h2>Servicio de Profesionales</h2>
+            </div>
+
         </section>
         <section>
-            <p class="text">Somos un equipo de profesionales, abogadas y contadoras, que ofrecemos el dictado de cursos para la practica profesional orientado a profesionales y estudiantes de la carrera de Derecho.
+            <p>Somos un equipo de profesionales, abogadas y contadoras, que ofrecemos el dictado de cursos para la practica profesional orientado a profesionales y estudiantes de la carrera de Derecho.
             Contamos con el mejor equipo profesores y tutores, de las materias más dificiles de la carrera de Abogacía a los fines de prepararte exitosamente en tus exámenes.</p>
         </section>
 
-        <section class="courses container">
-            <h3 class="titulo2">NUESTRAS ESPECIALIDADES</h3>
+        <section class="container courses">
+            <h3 class="courses__titulo">NUESTRAS ESPECIALIDADES</h3>
             
             <div class="courses__grid">
-                <article class="card effect">
-                    <div class="card__header"> 
-                        <video class="cardVideo" src="./assets/img/pexels-pavel-danilyuk-8716593.mp4" controls autoplay muted ></video>
-                    </div>
+                <article class="card">
+                    <video class="card__video" src="./assets/img/pexels-pavel-danilyuk-8716593.mp4" controls autoplay muted ></video>
+
                     <div>
                         <h4 class="card__title">CURSOS</h4>
                         <p class="card__description">
                             PATENTES Y REGISTRO DE MARCAS - CONSTITUCION DE SOCIEDADES
                             DEFENSA DEL CONSUMIDOR - 
-                            CUOTA ALIMENTARIA Y REGIMEN COMUNICACIONAL - DIVORCIO - DERECHO LABORAL                  
-                        </p>       
-                    </div>  
-                    <a class="card__link" href="./pages/cursos.html">Ver mas...</a>        
-                </article>
-
-
-                <article class="card effect">
-                    <div class="card__header">
-                        <img src="./assets/img/pexels-ekaterina-bolovtsova-6077520.jpg" alt="justicia"  />
+                            CUOTA ALIMENTARIA Y REGIMEN COMUNICACIONAL - DIVORCIO - DERECHO LABORAL    
+                            Preparate en la practica profesional!
+                        </p>     
                     </div>
-                    <h4 class="card__title">NOSOTRAS</h4>
-                    <p class="card__description">Somos un equipo técnico de tres abogadas y una contadora, especializadas en Materia Laboral, Daños y Perjuicios, Derecho de Familia y Previsional. Asesorate con nuestro Estudio Juridico! Querés formar parte?</p>
-                    <a class="card__link" href="./pages/nosotras.html">Dejanos tu Consulta</a>             
-                    
+                    <a class="card__link" href="./pages/cursos.html">Ver mas...</a>               
                 </article>
-                
-                <article class="card effect">
+                <article class="card">
+                    <img src="./assets/img/pexels-ekaterina-bolovtsova-6077520.jpg" alt="justicia"  /> 
+                    <h4 class="card__title">NOSOTRAS</h4>
+                    <p class="card__description">Somos un equipo técnico de tres abogadas y una contadora, especializadas en Materia Laboral, Daños y Perjuicios, Derecho de Familia y Previsional. Asesorate con nuestro Estudio Juridico! ¿Te gustaría formar parte de nuestro Equipo?</p>
+                    <a class="card__link" href="./pages/nosotras.html">Dejanos tu Consulta</a>
+                </article>
+
+                <article class="card">
                     <div id="carrusel2" class="carousel slide g-3" data-bs-ride="carousel">
-                        <!-- para poner puntas del carrusel redondas = rounded del 0 al 5 -->
                         <div class="carousel-inner rounded">
                             <div class="carousel-item active">
                                 <img src="./assets/img/espacio3.png" class="d-block w-100" height="350" alt="dos">
@@ -95,7 +98,7 @@
                     <a class="card__link" href="./pages/cowork.html">Ver mas...</a>
                    
                 </article>
- 
+               
             </div>
         </section>
 
@@ -106,12 +109,13 @@
                 <img src="./assets/img/mapa.jpg" alt="mapa" height="400" width="350" />
             </div>
         </section>
-
+        
         <div class="posicion">
-            <div class="wsp">
-                <a href="https://wa.me/5411" target="_blank"><img src="./assets/icons/5ae21cc526c97415d3213554.png" alt="whatsapp" width="130" height="100" /></a>
-                
-            </div> 
+                <div class="wsp">
+                    <a href="https://wa.me/5411" target="_blank"><img src="./assets/icons/5ae21cc526c97415d3213554.png" alt="whatsapp" width="130" height="100" /></a>
+                    
+                </div>      
+
         </div>
     </main>
 
@@ -123,10 +127,9 @@
             <div>
                 <h3>Nuestras Redes</h3>
                 <div class="footer__rrss">
-                    <a href="http://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
-                    <a href="http://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
-                    <a href="http://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
-                    
+                    <a href="http://facebook.com" target="_blank" class="link-facebook"><i class="bi bi-facebook"></i>Facebook</a>
+                    <a href="http://instagram.com" target="_blank" class="link-ig"><i class="bi bi-instagram"></i>Instagram</a>
+                    <a href="http://twitter.com" target="_blank" class="link-tw"><i class="bi bi-twitter"></i>Twitter</a>
                 </div>
             </div>
             <div>

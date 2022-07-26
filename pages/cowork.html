@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
     <title>COWORKING</title>
+    <meta name="description" content="Espacio de estudio, alquiler de oficinas y coworking, una nueva modalidad de trabajar!">
     <link rel="shortcut icon" href="../assets/5f45648162fa090004df3ccb.png" />
+    <script src="https://kit.fontawesome.com/4bc4df3516.js" crossorigin="anonymous"></script>
     <script defer src="../assets/js/index.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
@@ -17,12 +21,12 @@
         <nav class="header__menu container">
             <a href="../index.html" class="menu__nav-title">HCC!</a>
             <button class="menu__nav-toggle">
-                <i class="bi bi-list"></i>
+                <i class="fa-solid fa-bars"></i>
             </button>
-            <ul class="menu__nav">
-                <li><a href="./nosotras.html">NOSOTRAS</a></li>
-                <li><a href="./cursos.html">CURSOS</a></li>
-                <li><a href="./cowork.html">ESPACIO DE TRABAJO</a></li>
+        <ul class="menu__nav">
+            <strong><li><a href="./nosotras.html">NOSOTRAS</a></li></strong>
+            <strong><li><a href="./cursos.html">CURSOS</a></li></strong>
+            <strong><li><a href="./cowork.html">ESPACIO DE TRABAJO</a></li></strong>
 
             </ul>
         </nav>
@@ -40,7 +44,7 @@
         <section class="container text">
             <h2>NUESTRO ESPACIO</h2>
             <h3>Vení a Conocerlo!</h3>
-            <section class="container padre">
+            <section class="padre">
                 <div class= "divs hijo"><img class="hijo" src="../assets/img/entrada.png" alt="entrada" width="100%" height="450"/></div>
                 <div class="divs"><img src="../assets/img/espacio2.png" alt="sala" height="300" width="400" /></div>
                 <div class="divs"><img src="../assets/img/espacio3.png" alt="espacio3" width="400" height="300" /></div>
@@ -73,37 +77,36 @@
                 </div>
                 
             </section>
-              
-            
         </section>
-        <section id="prueba">
+        <!-- ESTE CARRUSEL APARECE CDO MEDIAQUERIE ES DE 665px -->
+        <section id="carrusel">
             <div class="container-md mt-5 g-20">
                 <div id="carouselExampleControls" class="carousel slide container-md mt-5" data-bs-ride="carousel">
-                    <!-- para poner puntas del carrusel redondas = rounded del 0 al 5 -->
+                    
                     <div class="carousel-inner rounded">
                         <div class="carousel-item active">
-                            <img src="../assets/img/espacio1.png" class="d-block w-100" alt="uno">
+                            <img src="../assets/img/espacio1.png" class="d-block w-100" width="450" height="400" alt="uno">
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/img/espacio2.png" class="d-block w-100" alt="dos">
+                            <img src="../assets/img/espacio2.png" class="d-block w-100" width="450" height="400" alt="dos">
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/img/espacio3.png" class="d-block w-100" alt="tres">
+                            <img src="../assets/img/espacio3.png" class="d-block w-100" width="450" height="400" alt="tres">
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/img/espacio4.png" class="d-block w-100" alt="cuatro">
+                            <img src="../assets/img/espacio4.png" class="d-block w-100" width="450" height="400" alt="cuatro">
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/img/espacio5.png" class="d-block w-100" alt="cinco">
+                            <img src="../assets/img/espacio5.png" class="d-block w-100" width="450" height="400" alt="cinco">
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/img/espacio6.png" class="d-block w-100" alt="seis">
+                            <img src="../assets/img/espacio6.png" class="d-block w-100" width="450" height="400" alt="seis">
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/img/sala.png" class="d-block w-100 he" alt="siete">
+                            <img src="../assets/img/sala.png" class="d-block w-100" width="450" height="400" alt="siete">
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/img/living.png" class="d-block w-100" alt="ocho">
+                            <img src="../assets/img/living.png" class="d-block w-100" width="450" height="400" alt="ocho">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -116,36 +119,51 @@
                     </button>
                 </div>
             </div>
-            
         </section>
 
-        <section class="formulario">
-            <h3>CONTACTANOS - info</h3>
-            <form class="fomrulario__form" action="">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre..."/>
-                <br />
-                <label for="correo">Correo electronico:</label>
-                <input type="email" id="correo" name="correo" placeholder="Email"/>
-                <br/>
-                <label for="consulta">Dejanos un mensaje:</label>
-                <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Consulta..."></textarea>
-                <br />
-                <br />
-                <input type="checkbox" id="newsletter" />
-                <label for="newsletter">Suscribite a nuestras novedades</label>
-                <br/>
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpar</button>
-            </form>
-        </section>
-        <section class="map">
+        <section class="map contenedor">
             <div class="map__img">
                 <h2>Dónde Estamos: </h2>
-                <p class="text">Nos encontramos en Rosario de Santa Fé N° 1000, Barrio General Paz, de la Ciudad de Córdoba, Argentina</p>
+                <p>Nos encontramos en Rosario de Santa Fé N° 1000, Barrio General Paz, de la Ciudad de Córdoba, Argentina</p>
                 <img src="../assets/img/mapa.jpg" alt="mapa" width="500" height="400" />
             </div>
+            <div class="formulario">
+                <h2>CONTACTANOS - info</h2>
+                <form class="formulario__form" action="">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre..."/>
+                    </div>
+                    <div>
+                        <label for="cel">telefono de contacto:</label>
+                        <input type="number" id="cel" name="cel" placeholder="+549..."/>
+                    </div>
+                    <div>
+                        <label for="correo">Correo electronico:</label>
+                        <input type="email" id="correo" name="correo" placeholder="Email"/>
+                    </div>
+                    <div>
+                        <label for="consulta">Dejanos un mensaje:</label>
+                    </div>
+                    <div>
+                        <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Consulta..."></textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="newsletter" />
+                        <label for="newsletter">Suscribite a nuestras novedades</label>
+                    </div>
+                    <div>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                    </div>
+                </form>
+            </div>
         </section>
+        <div class="posicion">
+            <div class="wsp">
+                <a href="https://wa.me/5411" target="_blank"><img src="../assets/icons/5ae21cc526c97415d3213554.png" alt="whatsapp" width="130" height="100" /></a>     
+            </div> 
+        </div>
     </main>
 
     <footer class="footer">
@@ -156,10 +174,9 @@
             <div>
                 <h3>Nuestras Redes</h3>
                 <div class="footer__rrss">
-                    <a href="http://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
-                    <a href="http://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
-                    <a href="http://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
-                    
+                    <a href="http://facebook.com" target="_blank" class="link-facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="http://instagram.com" target="_blank" class="link-ig"><i class="bi bi-instagram"></i></a>
+                    <a href="http://twitter.com" target="_blank" class="link-tw"><i class="bi bi-twitter"></i></a>  
                 </div>
             </div>
             <div>
