@@ -63,6 +63,7 @@ ul {
     .titulo h2 {
       display: none; } }
 
+
 @media screen and (max-width: 450px) {
   .titulo {
     width: 100%; }
@@ -186,6 +187,7 @@ ul {
       transform: scale(0.9); }
   .card__video {
     width: 100%;
+
     margin-bottom: 20px;
     border-radius: 20px;
     object-fit: cover;
@@ -347,7 +349,9 @@ ul {
   border: solid 1px #f8deae;
   grid-template-columns: repeat(3, 3fr);
   gap: 10px;
-  grid-template-areas: "hijo . ." "hijo . ." "hijito hijito hijito";
+  grid-template-areas: "hijo . ."
+ "hijo . ."
+ "hijito hijito hijito";
   overflow: hidden; }
 
 .hijo {
